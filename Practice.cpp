@@ -2,6 +2,7 @@
 #include <string>
 
 using std::string;
+using std::tolower
 
 // Receive three integers and rearrange their values so that they are in
 // descending order from greatest (first) to least (third)
@@ -42,14 +43,14 @@ bool Practice::isPalindrome(string input)
     while(*end == ' ') {
       end++;
     }
-    if (*end.tolower() != *start.tolower()) {
+    if (tolower(*end) != tolower(*start)) {
       return false;
     }
     start++;
   }
   return true;
 
-  
+
 //  for(unsigned int i=0; i < input.size(); i++)
 //   {
 //     if( input[i] < 'A' || input[i] > 'Z' )
