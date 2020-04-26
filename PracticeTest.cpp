@@ -22,164 +22,164 @@ TEST(PracticeTest, is_simple_palindrome)
 }
 
 
-TEST(PracticeTest, is_not_simple_palindrome)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("Zy");
-    ASSERT_FALSE(actual);
-}
+// TEST(PracticeTest, is_not_simple_palindrome)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("Zy");
+//     ASSERT_FALSE(actual);
+// }
 
-TEST(PracticeTest, is_medium_palindrome)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("refer");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_medium_palindrome)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("refer");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_medium_palindrome2)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("rreferr");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_medium_palindrome2)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("rreferr");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_medium_palindrome2)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("rreefeerr");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_medium_palindrome2)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("rreefeerr");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_not_medium_palindrome)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("referr");
-    ASSERT_FALSE(actual);
-}
+// TEST(PracticeTest, is_not_medium_palindrome)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("referr");
+//     ASSERT_FALSE(actual);
+// }
 
-TEST(PracticeTest, is_all_CAPS_palindrome)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("ANNA");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_all_CAPS_palindrome)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("ANNA");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_not_all_CAPS_palindrome)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("ANNAA");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_not_all_CAPS_palindrome)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("ANNAA");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_palindrome_with_numbers)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("11");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_palindrome_with_numbers)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("11");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_palindrome_with_spaces_hard)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("was it a rat i saw");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_palindrome_with_spaces_hard)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("was it a rat i saw");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_palindrome_with_spaces_easy)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("a a");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_palindrome_with_spaces_easy)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("a a");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_palindrome_multiple_case)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("AnnA");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_palindrome_multiple_case)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("AnnA");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, is_palindrome_multiple_case2)
-{
-    Practice obj;
-    bool actual = obj.isPalindrome("anNA");
-    ASSERT_TRUE(actual);
-}
+// TEST(PracticeTest, is_palindrome_multiple_case2)
+// {
+//     Practice obj;
+//     bool actual = obj.isPalindrome("anNA");
+//     ASSERT_TRUE(actual);
+// }
 
-TEST(PracticeTest, sort_reverse)
-{
-    Practice obj;
-		int first, second, third;
-		first = 1;
-		second = 2;
-		third = 3;
-    bool actual = obj.sortDescending(&first, &second, &third);
-    ASSERT_GT(first, second);
-		ASSERT_GT(first, third);
-		ASSERT_GT(second, third);
-}
+// TEST(PracticeTest, sort_reverse)
+// {
+//     Practice obj;
+// 		int first, second, third;
+// 		first = 1;
+// 		second = 2;
+// 		third = 3;
+//     bool actual = obj.sortDescending(&first, &second, &third);
+//     ASSERT_GT(first, second);
+// 		ASSERT_GT(first, third);
+// 		ASSERT_GT(second, third);
+// }
 
-TEST(PracticeTest, sort_already_done)
-{
-    Practice obj;
-		int first, second, third;
-		first = 3;
-		second = 2;
-		third = 1;
-    bool actual = obj.sortDescending(&first, &second, &third);
-    ASSERT_GT(first, second);
-		ASSERT_GT(first, third);
-		ASSERT_GT(second, third);
-}
+// TEST(PracticeTest, sort_already_done)
+// {
+//     Practice obj;
+// 		int first, second, third;
+// 		first = 3;
+// 		second = 2;
+// 		third = 1;
+//     bool actual = obj.sortDescending(&first, &second, &third);
+//     ASSERT_GT(first, second);
+// 		ASSERT_GT(first, third);
+// 		ASSERT_GT(second, third);
+// }
 
-TEST(PracticeTest, sort_large_numbers)
-{
-    Practice obj;
-		int first, second, third;
-		first = 19848723;
-		second = 344;
-		third = 324234;
-    bool actual = obj.sortDescending(&first, &second, &third);
-    ASSERT_GT(first, second);
-		ASSERT_GT(first, third);
-		ASSERT_GT(second, third);
-}
+// TEST(PracticeTest, sort_large_numbers)
+// {
+//     Practice obj;
+// 		int first, second, third;
+// 		first = 19848723;
+// 		second = 344;
+// 		third = 324234;
+//     bool actual = obj.sortDescending(&first, &second, &third);
+//     ASSERT_GT(first, second);
+// 		ASSERT_GT(first, third);
+// 		ASSERT_GT(second, third);
+// }
 
-TEST(PracticeTest, sort_swap_back)
-{
-    Practice obj;
-		int first, second, third;
-		first = 3;
-		second = 1;
-		third = 2;
-    bool actual = obj.sortDescending(&first, &second, &third);
-    ASSERT_GT(first, second);
-		ASSERT_GT(first, third);
-		ASSERT_GT(second, third);
-}
+// TEST(PracticeTest, sort_swap_back)
+// {
+//     Practice obj;
+// 		int first, second, third;
+// 		first = 3;
+// 		second = 1;
+// 		third = 2;
+//     bool actual = obj.sortDescending(&first, &second, &third);
+//     ASSERT_GT(first, second);
+// 		ASSERT_GT(first, third);
+// 		ASSERT_GT(second, third);
+// }
 
-TEST(PracticeTest, sort_swap_front)
-{
-    Practice obj;
-		int first, second, third;
-		first = 2;
-		second = 3;
-		third = 1;
-    bool actual = obj.sortDescending(&first, &second, &third);
-    ASSERT_GT(first, second);
-		ASSERT_GT(first, third);
-		ASSERT_GT(second, third);
-}
+// TEST(PracticeTest, sort_swap_front)
+// {
+//     Practice obj;
+// 		int first, second, third;
+// 		first = 2;
+// 		second = 3;
+// 		third = 1;
+//     bool actual = obj.sortDescending(&first, &second, &third);
+//     ASSERT_GT(first, second);
+// 		ASSERT_GT(first, third);
+// 		ASSERT_GT(second, third);
+// }
 
-TEST(PracticeTest, sort_swap_outer)
-{
-    Practice obj;
-		int first, second, third;
-		first = 1;
-		second = 2;
-		third = 3;
-    bool actual = obj.sortDescending(&first, &second, &third);
-    ASSERT_GT(first, second);
-		ASSERT_GT(first, third);
-		ASSERT_GT(second, third);
-}
+// TEST(PracticeTest, sort_swap_outer)
+// {
+//     Practice obj;
+// 		int first, second, third;
+// 		first = 1;
+// 		second = 2;
+// 		third = 3;
+//     bool actual = obj.sortDescending(&first, &second, &third);
+//     ASSERT_GT(first, second);
+// 		ASSERT_GT(first, third);
+// 		ASSERT_GT(second, third);
+// }
