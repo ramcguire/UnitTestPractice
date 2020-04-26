@@ -32,18 +32,37 @@ void Practice::sortDescending(int & first, int & second, int & third)
 // character in the string, but disregarding case ('x' is the same as 'X')
 bool Practice::isPalindrome(string input)
 {
-  for(int i=0; i < input.size(); i++)
-  {
-    if( input[i] < 'A' || input[i] > 'Z' )
-    {
-      //change lower case to upper case
-      input[i] = input[i] - ('a' - 'A');
+ 
+  auto start = input.begin();
+  for(auto end = input.rbegin(); end !=input.rend(); end++) {
+    // advance either begin or rbegin past any spaces
+    while(*start == ' ') {
+      start++;
     }
-  }
-  for(int i=0; i < input.size()/2; i++)
-  {
-    if( input[i] != input[input.size()-1-i] )
+    while(*end == ' ') {
+      end++;
+    }
+    if (*end.tolower() != *start.tolower()) {
       return false;
+    }
+    start++;
   }
   return true;
+
+  
+//  for(unsigned int i=0; i < input.size(); i++)
+//   {
+//     if( input[i] < 'A' || input[i] > 'Z' )
+//     {
+//       //change lower case to upper case
+//       input[i] = input[i] - ('a' - 'A');
+//     }
+//   }
+  // for(int i=0; i < input.size()/2; i++)
+  // {
+    
+  //   if( input[i] != input[input.size()-1-i] )
+  //     return false;
+  // }
+  // return true;
 }
