@@ -92,6 +92,20 @@ TEST(PracticeTest, is_palindrome_with_spaces_easy)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_not_palindrome_with_spaces)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("was it a rat i saww");
+    ASSERT_FALSE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_with_many_spaces)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("w       a   s i    t a ra   t i     sa w");
+    ASSERT_TRUE(actual);
+}
+
 TEST(PracticeTest, is_palindrome_multiple_case)
 {
     Practice obj;
@@ -103,6 +117,13 @@ TEST(PracticeTest, is_palindrome_multiple_case2)
 {
     Practice obj;
     bool actual = obj.isPalindrome("anNA");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_multiple_case3)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("wAs iT a rAt I saw");
     ASSERT_TRUE(actual);
 }
 
