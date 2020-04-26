@@ -1,8 +1,10 @@
 #include "Practice.h"
 #include <string>
+#include <algorithm>
 
 using std::string;
 using std::tolower;
+using std::swap;
 
 // Receive three integers and rearrange their values so that they are in
 // descending order from greatest (first) to least (third)
@@ -10,21 +12,15 @@ void Practice::sortDescending(int & first, int & second, int & third)
 {
   if( first < second )
   {
-    int temp = first;
-    first = second;
-    second = temp;
+    swap(first, second);
   }
   if( second < third )
   {
-    int temp = second;
-    second = third;
-    third = temp;
+    swap(second, third);
   }
   if( first < second )
   {
-    int temp = first;
-    first = third;
-    third = temp;
+    swap(first, second);
   }
 }
 
