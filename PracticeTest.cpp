@@ -22,12 +22,12 @@ TEST(PracticeTest, is_simple_palindrome)
 }
 
 
-// TEST(PracticeTest, is_not_simple_palindrome)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("Zy");
-//     ASSERT_FALSE(actual);
-// }
+TEST(PracticeTest, is_not_simple_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("Zy");
+    ASSERT_FALSE(actual);
+}
 
 // TEST(PracticeTest, is_medium_palindrome)
 // {
