@@ -127,80 +127,80 @@ TEST(PracticeTest, is_palindrome_multiple_case3)
     ASSERT_TRUE(actual);
 }
 
-// TEST(PracticeTest, sort_reverse)
-// {
-//     Practice obj;
-// 		int first, second, third;
-// 		first = 1;
-// 		second = 2;
-// 		third = 3;
-//     bool actual = obj.sortDescending(&first, &second, &third);
-//     ASSERT_GT(first, second);
-// 		ASSERT_GT(first, third);
-// 		ASSERT_GT(second, third);
-// }
+TEST(PracticeTest, sort_reverse)
+{
+    Practice obj;
+		int first, second, third;
+		first = 1;
+		second = 2;
+		third = 3;
+    bool actual = obj.sortDescending(&first, &second, &third);
+    ASSERT_GT(first, second);
+		ASSERT_GT(first, third);
+		ASSERT_GT(second, third);
+}
 
-// TEST(PracticeTest, sort_already_done)
-// {
-//     Practice obj;
-// 		int first, second, third;
-// 		first = 3;
-// 		second = 2;
-// 		third = 1;
-//     bool actual = obj.sortDescending(&first, &second, &third);
-//     ASSERT_GT(first, second);
-// 		ASSERT_GT(first, third);
-// 		ASSERT_GT(second, third);
-// }
+TEST(PracticeTest, sort_already_done)
+{
+    Practice obj;
+		int first, second, third;
+		first = 3;
+		second = 2;
+		third = 1;
+    bool actual = obj.sortDescending(&first, &second, &third);
+    ASSERT_GT(first, second);
+		ASSERT_GT(first, third);
+		ASSERT_GT(second, third);
+}
 
-// TEST(PracticeTest, sort_large_numbers)
-// {
-//     Practice obj;
-// 		int first, second, third;
-// 		first = 19848723;
-// 		second = 344;
-// 		third = 324234;
-//     bool actual = obj.sortDescending(&first, &second, &third);
-//     ASSERT_GT(first, second);
-// 		ASSERT_GT(first, third);
-// 		ASSERT_GT(second, third);
-// }
+TEST(PracticeTest, sort_large_numbers)
+{
+    Practice obj;
+		int first, second, third;
+		first = 19848723;
+		second = 344;
+		third = 324234;
+    bool actual = obj.sortDescending(&first, &second, &third);
+    ASSERT_GT(first, second);
+		ASSERT_GT(first, third);
+		ASSERT_GT(second, third);
+}
 
-// TEST(PracticeTest, sort_swap_back)
-// {
-//     Practice obj;
-// 		int first, second, third;
-// 		first = 3;
-// 		second = 1;
-// 		third = 2;
-//     bool actual = obj.sortDescending(&first, &second, &third);
-//     ASSERT_GT(first, second);
-// 		ASSERT_GT(first, third);
-// 		ASSERT_GT(second, third);
-// }
+TEST(PracticeTest, sort_swap_back)
+{
+    Practice obj;
+		int first, second, third;
+		first = 3;
+		second = 1;
+		third = 2;
+    bool actual = obj.sortDescending(&first, &second, &third);
+    ASSERT_GT(first, second);
+		ASSERT_GT(first, third);
+		ASSERT_GT(second, third);
+}
 
-// TEST(PracticeTest, sort_swap_front)
-// {
-//     Practice obj;
-// 		int first, second, third;
-// 		first = 2;
-// 		second = 3;
-// 		third = 1;
-//     bool actual = obj.sortDescending(&first, &second, &third);
-//     ASSERT_GT(first, second);
-// 		ASSERT_GT(first, third);
-// 		ASSERT_GT(second, third);
-// }
+TEST(PracticeTest, sort_swap_front)
+{
+    Practice obj;
+		int first, second, third;
+		first = 2;
+		second = 3;
+		third = 1;
+    bool actual = obj.sortDescending(&first, &second, &third);
+    ASSERT_GT(first, second);
+		ASSERT_GT(first, third);
+		ASSERT_GT(second, third);
+}
 
-// TEST(PracticeTest, sort_swap_outer)
-// {
-//     Practice obj;
-// 		int first, second, third;
-// 		first = 1;
-// 		second = 2;
-// 		third = 3;
-//     bool actual = obj.sortDescending(&first, &second, &third);
-//     ASSERT_GT(first, second);
-// 		ASSERT_GT(first, third);
-// 		ASSERT_GT(second, third);
-// }
+TEST(PracticeTest, sort_swap_outer)
+{
+    Practice obj;
+		int first, second, third;
+		first = 1;
+		second = 2;
+		third = 3;
+    bool actual = obj.sortDescending(&first, &second, &third);
+    ASSERT_GT(first, second);
+		ASSERT_GT(first, third);
+		ASSERT_GT(second, third);
+}
