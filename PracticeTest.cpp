@@ -29,82 +29,82 @@ TEST(PracticeTest, is_not_simple_palindrome)
     ASSERT_FALSE(actual);
 }
 
-// TEST(PracticeTest, is_medium_palindrome)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("refer");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_medium_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("refer");
+    ASSERT_TRUE(actual);
+}
 
-// TEST(PracticeTest, is_medium_palindrome2)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("rreferr");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_medium_palindrome2)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("rreferr");
+    ASSERT_TRUE(actual);
+}
 
-// TEST(PracticeTest, is_medium_palindrome2)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("rreefeerr");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_medium_palindrome3)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("rreefeerr");
+    ASSERT_TRUE(actual);
+}
 
-// TEST(PracticeTest, is_not_medium_palindrome)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("referr");
-//     ASSERT_FALSE(actual);
-// }
+TEST(PracticeTest, is_not_medium_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("referr");
+    ASSERT_FALSE(actual);
+}
 
-// TEST(PracticeTest, is_all_CAPS_palindrome)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("ANNA");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_all_CAPS_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("ANNA");
+    ASSERT_TRUE(actual);
+}
 
-// TEST(PracticeTest, is_not_all_CAPS_palindrome)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("ANNAA");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_not_all_CAPS_palindrome)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("ANNAA");
+    ASSERT_FALSE(actual);
+}
 
-// TEST(PracticeTest, is_palindrome_with_numbers)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("11");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_palindrome_with_numbers)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("11");
+    ASSERT_TRUE(actual);
+}
 
-// TEST(PracticeTest, is_palindrome_with_spaces_hard)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("was it a rat i saw");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_palindrome_with_spaces_hard)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("was it a rat i saw");
+    ASSERT_TRUE(actual);
+}
 
-// TEST(PracticeTest, is_palindrome_with_spaces_easy)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("a a");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_palindrome_with_spaces_easy)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("a a");
+    ASSERT_TRUE(actual);
+}
 
-// TEST(PracticeTest, is_palindrome_multiple_case)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("AnnA");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_palindrome_multiple_case)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("AnnA");
+    ASSERT_TRUE(actual);
+}
 
-// TEST(PracticeTest, is_palindrome_multiple_case2)
-// {
-//     Practice obj;
-//     bool actual = obj.isPalindrome("anNA");
-//     ASSERT_TRUE(actual);
-// }
+TEST(PracticeTest, is_palindrome_multiple_case2)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("anNA");
+    ASSERT_TRUE(actual);
+}
 
 // TEST(PracticeTest, sort_reverse)
 // {
