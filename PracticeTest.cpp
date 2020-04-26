@@ -134,7 +134,7 @@ TEST(PracticeTest, sort_reverse)
 		first = 1;
 		second = 2;
 		third = 3;
-    bool actual = obj.sortDescending(*first, *second, *third);
+    bool actual = obj.sortDescending(first, second, third);
     ASSERT_GT(first, second);
 		ASSERT_GT(first, third);
 		ASSERT_GT(second, third);
@@ -147,7 +147,7 @@ TEST(PracticeTest, sort_already_done)
 		first = 3;
 		second = 2;
 		third = 1;
-    bool actual = obj.sortDescending(*first, *second, *third);
+    bool actual = obj.sortDescending(first, second, third);
     ASSERT_GT(first, second);
 		ASSERT_GT(first, third);
 		ASSERT_GT(second, third);
@@ -160,7 +160,7 @@ TEST(PracticeTest, sort_large_numbers)
 		first = 19848723;
 		second = 344;
 		third = 324234;
-    bool actual = obj.sortDescending(*first, *second, *third);
+    bool actual = obj.sortDescending(first, second, third);
     ASSERT_GT(first, second);
 		ASSERT_GT(first, third);
 		ASSERT_GT(second, third);
@@ -173,7 +173,7 @@ TEST(PracticeTest, sort_swap_back)
 		first = 3;
 		second = 1;
 		third = 2;
-    bool actual = obj.sortDescending(*first, *second, *third);
+    bool actual = obj.sortDescending(first, second, third);
     ASSERT_GT(first, second);
 		ASSERT_GT(first, third);
 		ASSERT_GT(second, third);
