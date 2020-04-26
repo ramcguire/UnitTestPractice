@@ -2,7 +2,7 @@
 #include <string>
 
 using std::string;
-using std::tolower
+using std::tolower;
 
 // Receive three integers and rearrange their values so that they are in
 // descending order from greatest (first) to least (third)
