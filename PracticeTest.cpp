@@ -106,6 +106,27 @@ TEST(PracticeTest, is_palindrome_with_many_spaces)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_palindrome_sentence)
+{
+	Practice obj;
+	bool actual = obj.isPalindrome("Now saw ye no mosses or foam or aroma of roses So money was won");
+	ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_sentence_punctuation)
+{
+	Practice obj;
+	bool actual = obj.isPalindrome("Now saw ye no mosses, or foam or aroma of roses. So money was won");
+	ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_not_palindrome_sentence_punctuation)
+{
+	Practice obj;
+	bool actual = obj.isPalindrome("Now saaw ye no mosses, or foam or aroma of roses. So money was won");
+	ASSERT_FALSE(actual);
+}
+
 TEST(PracticeTest, is_palindrome_multiple_case)
 {
     Practice obj;

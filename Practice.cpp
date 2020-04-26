@@ -33,10 +33,10 @@ bool Practice::isPalindrome(string input)
   auto start = input.begin();
   for(auto end = input.rbegin(); end !=input.rend(); end++) {
     // advance either begin or rbegin past any spaces
-    while(*start == ' ') {
+    while(*start == ' ' || !isalnum(*start)) {
       start++;
     }
-    while(*end == ' ') {
+    while(*end == ' ' || !isalnum(*end)) {
       end++;
     }
     if (tolower(*end) != tolower(*start)) {
@@ -45,21 +45,4 @@ bool Practice::isPalindrome(string input)
     start++;
   }
   return true;
-
-
-//  for(unsigned int i=0; i < input.size(); i++)
-//   {
-//     if( input[i] < 'A' || input[i] > 'Z' )
-//     {
-//       //change lower case to upper case
-//       input[i] = input[i] - ('a' - 'A');
-//     }
-//   }
-  // for(int i=0; i < input.size()/2; i++)
-  // {
-    
-  //   if( input[i] != input[input.size()-1-i] )
-  //     return false;
-  // }
-  // return true;
 }
